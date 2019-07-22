@@ -1,2 +1,2 @@
 # JeevanPortal
-Jeevan - A monitoring web portal for alcoholic user
+Jeevan - A monitoring web portal for alcohol addicted user
