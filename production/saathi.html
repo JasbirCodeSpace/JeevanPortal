@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>User | Aadarsh Sehgal</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <link href="vendor/devicons/css/devicons.min.css" rel="stylesheet">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/resume.min.css" rel="stylesheet">
+    <style>
+    .btn{
+	font-family:arial;
+	text-transform:uppercase;
+	font-size:20px;
+	width:120px;
+	height:50px;
+	border-radius:80px;
+	line-height:60px;
+	text-align:center;
+	border : 3px solid #009688;
+	display:block;
+	text-decoration:none;
+	margin:300px auto;
+	color:#009688;
+	position:relative;
+	overflow:hidden;
+	background:transparent;
+	transition:.3s;
+	
+	top:-340px;
+	left:-100px;
+	
+	
+}
+#btn_text{
+  position:absolute;
+  top:-10px;
+  left:37px;
+}
+
+.btn:before{
+	
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:#009688;
+	top:-100%;
+	left:0;
+	z-index:-1;
+	transition:.3s;
+	opacity:.5;
+}
+.btn:after{
+	
+	content:'';
+	width:100%;
+	height:100%;
+	position:absolute;
+	background:#009688;
+	top:-100%;
+	left:0;
+	z-index:-1;
+	transition:.3s;
+	transition-delay:.2s;
+	
+}
+.btn:hover{
+	color:#fff;
+}
+
+.btn:hover:before{
+	top:0;
+}
+
+.btn:hover:after{
+   top:0;
+}
+
+</style>
+
+<!-- line graph -->
+<script src="Chart.bundle.js"></script>
+	<script src="utils.js"></script>
+	<style>
+	canvas{
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+	
+	<script src="canvasjs.min.js"></script>
+  </head>
+ 
+  <body id="page-top">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+      <a class="navbar-brand js-scroll-trigger" href="#page-top">
+        
+        <span class="d-none d-lg-block">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/saathi.jpg" alt="">
+        </span>
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#game"> User Progress</a>
+        
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#user">Addicted User</a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container-fluid p-0">
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
+        <div class="my-auto">
+		 
+          <h1 class="mb-0">HARSH
+            <span class="text-primary">Sehgal</span>
+          </h1>
+          <div class="subheading mb-5">3 GALAXY APARTMENTS · BANDRA(WEST), MUMBAI  400050 · (+91)8872342516 ·
+            <a href="mailto:aadarsh.sehgal@gmail.com">harsh.sehgal@gmail.com</a>
+          </div>
+		  
+          <p class="mb-5"></p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="game">
+        <div class="my-auto">
+          <!--<h2 class="mb-5">Progress</h2>-->
+		  	<div style="width:50%;">
+		<canvas id="canvas" style="position:relative;top:-40px;"></></canvas>
+	</div>
+	<div id="canvas-holder" style="width:40%">
+		<canvas id="chart-area" style="position:relative;top:-270px;left:600px;"></canvas>
+	</div>
+	<div id="chartContainer" style="position:relative;height: 370px; max-width: 920px; margin: 0px auto;top:-200px"></div>
+          
+          
+      </section>
+
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex d-column" id="user">
+        <div class="my-auto">
+		<img src="img/profile.jpg" style="height:200px;width:200px;border-radius:50%">
+          <h1 class="mb-0">Aadarsh
+            <span class="text-primary">Sehgal</span>
+          </h1>
+          <div class="subheading mb-5">3 GALAXY APARTMENTS · BANDRA(WEST), MUMBAI  400050 · (+91)8376337621 ·
+            <a href="mailto:aadarsh.sehgal@gmail.com">aadarsh.sehgal@gmail.com</a>
+          </div>
+          <p class="mb-5"></p>
+          <ul class="list-inline list-social-icons mb-0">
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-instagram fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+            <li class="list-inline-item">
+              <a href="#">
+                <span class="fa-stack fa-lg">
+                  <i class="fa fa-circle fa-stack-2x"></i>
+                  <i class="fa fa-whatsapp fa-stack-1x fa-inverse"></i>
+                </span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="rewards">
+        <div class="my-auto">
+		<img src="img/trophy.jpg" style="height:200px;width:200px;border-radius:50% ; position:relative;top:40px;left:350px;">
+          <h2 class="mb-5" style="position:relative;top:-90px;">Rewards</h2>
+           <h1 class="mb-5" style="position:relative;top:-40px;font-size:60px;">TOTAL CREDITS POINTS : 1500</h1>
+		   <h3 class="mb-5" style="position:relative;top:-40px;">CREDITS POINTS (USED) : 500</h2>
+            
+        </div>
+        </div>
+      </section>
+
+      <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="support">
+        <div class="my-auto">
+          <h2 class="mb-5">Support</h2>
+		 <h3>Sarvam Neuropsychiatric Center </h5><p>Haryana , India<span style="padding-left:6em">(+91)8130755455</span></p>
+		 <h3>Safe House Wellness Retreat  </h5><p>New Delhi , India<span style="padding-left:6em">(+91)9717886633</span></p>
+		 <h3>Roar Wellness </h5><p>New Delhi , India<span style="padding-left:6em">(+91)8130109221</span></p>
+		 <h3>Bhumika Foundation Trust </h5><p>New Delhi , India<span style="padding-left:6em">(+91)9911330555</span></p>
+		 <h3>Aatman Health And Wellness</h5><p>New Delhi , India<span style="padding-left:6em">(+91)9818122848</span></p>
+		 <h3>Rama Drug De-Addiction And Rehabilitation Centre </h5><p>New Delhi, India<span style="padding-left:6em">(+91)9811303800</span></p>
+		 
+          </div>
+      </section>
+
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/resume.min.js"></script>
+	<script>
+
+		window.onload = function() {
+            var ctx1 = document.getElementById('canvas').getContext('2d');
+			window.myLine = new Chart(ctx1, config1);
+		
+		    var ctx2 = document.getElementById('chart-area').getContext('2d');
+			window.myDoughnut = new Chart(ctx2, config2);
+		
+			var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "OVERALL PROGRESS"
+	},
+	axisY: {
+		title: "PROGRESS"
+	},
+	data: [{        
+		type: "column",  
+		showInLegend: true, 
+		legendMarkerColor: "grey",
+		
+		dataPoints: [      
+			{ y: randomScalingFactor(), label: "WEEK 1" },
+			{ y: randomScalingFactor(), label: "WEEK 2" },
+			{ y: randomScalingFactor(), label: "WEEK 3" },
+			{ y: randomScalingFactor(), label: "WEEK 4" }
+			
+		]
+	}]
+});
+
+chart.render();
+}
+var config2 = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+					
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.orange,
+						
+						window.chartColors.green
+						
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Most Addicted ',
+					'Moderate ',
+					'Less Addicted',
+					
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+
+var config1 = {
+			type: 'line',
+			data: {
+				labels: ['WEEK 1', 'WEEK 2', 'WEEK 3', 'WEEK 4'],
+				datasets: [{
+					label: 'CREDITS',
+					backgroundColor: window.chartColors.red,
+					borderColor: window.chartColors.red,
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+						
+					],
+					fill: false,
+				}
+				]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					text: 'CREDITS PROGRESS'
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'Month'
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'CREDITS EARNED'
+						}
+					}]
+				}
+			}
+		};
+
+	
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+
+			});
+
+			window.myLine.update();
+		});
+
+		var colorNames = Object.keys(window.chartColors);
+		document.getElementById('addDataset').addEventListener('click', function() {
+			var colorName = colorNames[config.data.datasets.length % colorNames.length];
+			var newColor = window.chartColors[colorName];
+			var newDataset = {
+				label: 'Dataset ' + config.data.datasets.length,
+				backgroundColor: newColor,
+				borderColor: newColor,
+				data: [],
+				fill: false
+			};
+
+			for (var index = 0; index < config.data.labels.length; ++index) {
+				newDataset.data.push(randomScalingFactor());
+			}
+
+			config.data.datasets.push(newDataset);
+			window.myLine.update();
+		});
+
+		
+		
+		
+
+		
+	</script>
+
+
+
+  </body>
+
+</html>

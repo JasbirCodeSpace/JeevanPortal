@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" href="images/favicon.ico" type="image/ico" />
+
+    <title>ADMIN | DASHBOARD</title>
+
+    <!-- Bootstrap -->
+    <link href="../vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="../vendors/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+    <!-- NProgress -->
+    <link href="../vendors/nprogress/nprogress.css" rel="stylesheet">
+    <!-- iCheck -->
+    <link href="../vendors/iCheck/skins/flat/green.css" rel="stylesheet">
+	
+    <!-- bootstrap-progressbar -->
+    <link href="../vendors/bootstrap-progressbar/css/bootstrap-progressbar-3.3.4.min.css" rel="stylesheet">
+    <!-- JQVMap -->
+    <link href="../vendors/jqvmap/dist/jqvmap.min.css" rel="stylesheet"/>
+    <!-- bootstrap-daterangepicker -->
+    <link href="../vendors/bootstrap-daterangepicker/daterangepicker.css" rel="stylesheet">
+
+    <!-- Custom Theme Style -->
+    <link href="../build/css/custom.min.css" rel="stylesheet">
+	
+	<!-- pie chart -->
+	<script src="../Chart.bundle.js"></script>
+	<script src="utils.js"></script>
+	<style>
+	canvas {
+		-moz-user-select: none;
+		-webkit-user-select: none;
+		-ms-user-select: none;
+	}
+	</style>
+  </head>
+
+  <body class="nav-md">
+    <div class="container body">
+      <div class="main_container">
+        <div class="col-md-3 left_col">
+          <div class="left_col scroll-view">
+            <div class="navbar nav_title" style="border: 0;">
+              <a href="index.html" class="site_title"> <span>JEEVAN | ADMIN</span></a>
+            </div>
+
+            <div class="clearfix"></div>
+
+            <!-- menu profile quick info -->
+            <div class="profile clearfix">
+              <div class="profile_pic">
+                <img src="images/img.jpg" alt="..." class="img-circle profile_img">
+              </div>
+              <div class="profile_info">
+                <span>Welcome,</span>
+                <h2>Jatin Hooda</h2>
+              </div>
+            </div>
+            <!-- /menu profile quick info -->
+
+            <br />
+
+            <!-- sidebar menu -->
+            <div id="sidebar-menu" class="main_menu_side hidden-print main_menu">
+              <div class="menu_section">
+                <h3>General</h3>
+                <ul class="nav side-menu">
+                  <li><a href="admin_dashboard1.html"><i class="fa fa-home"></i> DASHBOARD </a></li>
+				  <li><a href="form1.php"><i class="fa fa-edit"></i> ADD USER </a></li>
+                  
+				 
+                  
+              </div>
+
+            </div>
+            <!-- /sidebar menu -->
+
+            <!-- /menu footer buttons -->
+            <div class="sidebar-footer hidden-small">
+              <a data-toggle="tooltip" data-placement="top" title="Settings" style="width:115px">
+                <span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+              </a>
+             
+              <a data-toggle="tooltip" data-placement="top" title="Logout" style="width:115px" href="login.html">
+                <span class="glyphicon glyphicon-off" aria-hidden="true"></span>
+              </a>
+            </div>
+            <!-- /menu footer buttons -->
+          </div>
+        </div>
+
+        <!-- top navigation -->
+        <div class="top_nav">
+          <div class="nav_menu">
+            <nav>
+              <div class="nav toggle">
+                <a id="menu_toggle"><i class="fa fa-bars"></i></a>
+              </div>
+
+              <ul class="nav navbar-nav navbar-right">
+                <li class="">
+                  <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                    <img src="images/img.jpg" alt="">Jatin Hooda
+                    <span class=" fa fa-angle-down"></span>
+                  </a>
+                  <ul class="dropdown-menu dropdown-usermenu pull-right">
+                    <li><a href="javascript:;"> Profile</a></li>
+                    <li>
+                      <a href="javascript:;">
+                        
+                        <span>Settings</span>
+                      </a>
+                    </li>
+                    <li><a href="javascript:;">Help</a></li>
+                    <li><a href="admin_login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a></li>
+                  </ul>
+                </li>
+
+               <li role="presentation" class="dropdown">
+                  <a href="javascript:;" class="dropdown-toggle info-number" data-toggle="dropdown" aria-expanded="false">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="badge bg-green">6</span>
+                  </a>
+                  <ul id="menu1" class="dropdown-menu list-unstyled msg_list" role="menu">
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>Jatin Hooda</span>
+                          <span class="time">2 hours ago</span>
+                        </span>
+                        <span class="message">
+                          New event notifications...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>Jatin Hooda</span>
+                          <span class="time">15 hours ago</span>
+                        </span>
+                        <span class="message">
+                           New event notifications...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>Jatin Hooda</span>
+                          <span class="time">1 day ago</span>
+                        </span>
+                        <span class="message">
+                            New event notifications...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <a>
+                        <span class="image"><img src="images/img.jpg" alt="Profile Image" /></span>
+                        <span>
+                          <span>Jatin Hooda</span>
+                          <span class="time">3 days ago</span>
+                        </span>
+                        <span class="message">
+                          New event notifications...
+                        </span>
+                      </a>
+                    </li>
+                    <li>
+                      <div class="text-center">
+                        <a>
+                          <strong>See All Alerts</strong>
+                          <i class="fa fa-angle-right"></i>
+                        </a>
+                      </div>
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+        <!-- /top navigation -->
+
+        <!-- page content -->
+        <div class="right_col" role="main">
+          <!-- top tiles -->
+          <div class="row tile_count">
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Users</span>
+              <div class="count">2500</div>
+              <span class="count_bottom"><i class="green">4% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-clock-o"></i> Average Time By User</span>
+              <div class="count">123.50</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>
+            </div>
+			<div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top><i class="fa fa-user"></i>Average Time By Saathi</span>
+              <div class="count">83.50</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Males</span>
+              <div class="count green">12,500</div>
+              <span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>34% </i> From last Week</span>
+            </div>
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Females</span>
+              <div class="count">4,567</div>
+              <span class="count_bottom"><i class="red"><i class="fa fa-sort-desc"></i>12% </i> From last Week</span>
+            </div>
+            
+            <div class="col-md-2 col-sm-4 col-xs-6 tile_stats_count">
+              <span class="count_top"><i class="fa fa-user"></i> Total Rehab Centres</span>
+              <div class="count">125</div>
+              
+            </div>
+          </div>
+          <!-- /top tiles -->
+
+          <div class="row">
+            <div class="col-md-12 col-sm-12 col-xs-12">
+              <div class="dashboard_graph">
+
+                <div class="row x_title">
+                  <div class="col-md-6">
+                    <h3>PROGRESS REPORT <small>FOR YOUR STATE</small></h3>
+                  </div>
+                  <div class="col-md-6">
+                    <div id="reportrange" class="pull-right" style="background: #fff; cursor: pointer; padding: 5px 10px; border: 1px solid #ccc">
+                      <i class="glyphicon glyphicon-calendar fa fa-calendar"></i>
+                      <span>December 30, 2014 - January 28, 2015</span> <b class="caret"></b>
+                    </div>
+                  </div>
+                </div>
+                   
+                    <div style="width:70%">
+                     <canvas id="canvas" style="position:relative; width:50px;height:50px;"></canvas>
+                    </div>
+					
+					
+                <div class="col-md-3 col-sm-3 col-xs-12 bg-white" style="position:absolute;top:90px;right:40px;">
+                  <div class="x_title">
+                    <h2>AGE GROUP</h2>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                      <p>BELOW 18</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="15"></div>
+						  
+                        </div>
+                      </div>
+					  <h5 style="position:relative;right:-230px;top:-30px">15%</h5>
+                    </div>
+                    <div>
+                      <p>BETWEEN 18 AND 30</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="40"></div>
+                        </div>
+                      </div>
+                    </div>
+					<h5 style="position:relative;right:-230px;top:-30px">45%</h5>
+                  </div>
+                  <div class="col-md-12 col-sm-12 col-xs-6">
+                    <div>
+                      <p>BETWEEN 30 AND 50</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="35"></div>
+                        </div>
+                      </div>
+					  <h5 style="position:relative;right:-230px;top:-30px">35%</h5>
+                    </div>
+                    <div>
+                      <p>ABOVE 50</p>
+                      <div class="">
+                        <div class="progress progress_sm" style="width: 76%;">
+                          <div class="progress-bar bg-green" role="progressbar" data-transitiongoal="10"></div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <h5 style="position:relative;right:-240px;top:-30px"></h5>
+                </div>
+
+                <div class="clearfix"></div>
+              </div>
+            </div>
+
+          </div>
+          <br />
+
+          <div class="row">
+
+
+            <div class="col-md-4 col-sm-4 col-xs-12" style="width:545px;">
+              <div class="x_panel tile fixed_height_320">
+                <div class="x_title">
+                  <h2>LEADING STATES</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content" >
+                  <h4>IN TERMS OF USERS COUNT</h4>
+                  <div class="widget_summary">
+                    <div class="w_left w_25" >
+                      <span>CHATTISGARH</span>
+                    </div>
+                    <div class="w_center w_55">
+                      <div class="progress">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 66%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w_right w_20">
+                      <span>123k</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                  <div class="widget_summary">
+                    <div class="w_left w_25">
+                      <span>KERALA</span>
+                    </div>
+                    <div class="w_center w_55">
+                      <div class="progress">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 45%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w_right w_20">
+                      <span>53k</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="widget_summary">
+                    <div class="w_left w_25">
+                      <span>TAMIL NADU</span>
+                    </div>
+                    <div class="w_center w_55">
+                      <div class="progress">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w_right w_20">
+                      <span>23k</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="widget_summary">
+                    <div class="w_left w_25">
+                      <span>GUJRAT</span>
+                    </div>
+                    <div class="w_center w_55">
+                      <div class="progress">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w_right w_20">
+                      <span>20k</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+                  <div class="widget_summary">
+                    <div class="w_left w_25">
+                      <span>ODISHA</span>
+                    </div>
+                    <div class="w_center w_55">
+                      <div class="progress">
+                        <div class="progress-bar bg-green" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 17%;">
+                          <span class="sr-only">60% Complete</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="w_right w_20">
+                      <span>17k</span>
+                    </div>
+                    <div class="clearfix"></div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-4 col-sm-4 col-xs-12" style="width:554px;">
+              <div class="x_panel tile fixed_height_320 overflow_hidden">
+                <div class="x_title">
+                  <h2>USER CATEGORIE STATUS</h2>
+                  <ul class="nav navbar-right panel_toolbox">
+                    <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                    </li>
+                    <li class="dropdown">
+                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                      <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Settings 1</a>
+                        </li>
+                        <li><a href="#">Settings 2</a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li><a class="close-link"><i class="fa fa-close"></i></a>
+                    </li>
+                  </ul>
+                  <div class="clearfix"></div>
+                </div>
+                <div class="x_content">
+                  <table class="" style="width:100%">
+                    <tr>
+                      
+                      <th>
+                        <div class="col-lg-7 col-md-7 col-sm-7 col-xs-7">
+                          <p class="" style="position:relative;left:240px;top:30px;">CATEGORIE</p>
+                        </div>
+                        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-5">
+                          <p class="" style="position:relative;left:250px;top:30px;">STATUS</p>
+                        </div>
+                      </th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <div id="canvas-holder" style="position:relative;left:-70px;width:100%;height:100%">
+		                 <canvas id="chart-area"></canvas>
+	                      </div>
+                      </td>
+                      <td>
+                        <table class="tile_info"  style="position:relative;left:-50px;top:10px;">
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square red"></i>MOST ADDICTED</p>
+                            </td>
+                            <td style="position:relative;left:30px;">45%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square yellow"></i>MODERATE </p>
+                            </td>
+                            <td style="position:relative;left:30px;">30%</td>
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square green"></i>LESS ADDICTED </p>
+                            </td>
+                            <td style="position:relative;left:30px;">25%</td>
+                          </tr>
+                        
+                        </table>
+                      </td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+
+
+            
+
+
+          
+
+            <div class="col-md-8 col-sm-8 col-xs-12">
+
+
+
+              <div class="row" style="position:relative;padding:0 ; left:-10px;width:1090px;">
+
+                <div class="col-md-12 col-sm-12 col-xs-12" >
+                  <div class="x_panel" >
+                    <div class="x_title">
+                      <h2>INDIA <small>ADDICTION STATUS</small></h2>
+                      <ul class="nav navbar-right panel_toolbox">
+                        <li><a class="collapse-link"><i class="fa fa-chevron-up"></i></a>
+                        </li>
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-wrench"></i></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Settings 1</a>
+                            </li>
+                            <li><a href="#">Settings 2</a>
+                            </li>
+                          </ul>
+                        </li>
+                        <li><a class="close-link"><i class="fa fa-close"></i></a>
+                        </li>
+                      </ul>
+                      <div class="clearfix"></div>
+                    </div>
+                    <div class="x_content">
+                      <div class="dashboard-widget-content">
+                        <div class="col-md-4 hidden-small">
+                          <h2 class="line_30">STATES IN DANGER</h2>
+
+                          <table class="countries_list">
+                            <tbody>
+                              <tr>
+                                <td>UTTAR PARDESH</td>
+                                <td class="fs15 fw700 text-right" id="danger1">72%</td>
+                              </tr>
+                              <tr>
+                                <td>PUNJAB</td>
+                                <td class="fs15 fw700 text-right" id="danger2">63%</td>
+                              </tr>
+                              <tr>
+                                <td>HARYANA</td>
+                                <td class="fs15 fw700 text-right" id="danger3">62%</td>
+                              </tr>
+                              <tr>
+                                <td>BIHAR</td>
+                                <td class="fs15 fw700 text-right" id="danger4">58%</td>
+                              </tr>
+                              <tr>
+                                <td>MAHARASHTRA</td>
+                                <td class="fs15 fw700 text-right" id="danger4">47%</td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                        <!--<div id="world-map-gdp" class="col-md-8 col-sm-12 col-xs-12" style="height:230px;"></div>-->
+						<img src="./india.svg" style="right:-500px;width:600px;height:400px;" >
+						
+						<table class="tile_info"  style="position:absolute;top:250px;left:20px">
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square red"></i>MOST ADDICTED</p>
+                            </td>
+                           
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square yellow"></i>MODERATE </p>
+                            </td>
+                            
+                          </tr>
+                          <tr>
+                            <td>
+                              <p><i class="fa fa-square green"></i>LESS ADDICTED </p>
+                            </td>
+                            
+                          </tr>
+                        
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <div class="row">
+
+
+               
+        </footer>
+        <!-- /footer content -->
+      </div>
+    </div>
+     	<script>
+		function getRandomNumber(minRange, maxRange) {
+    return Math.floor(Math.random() * (maxRange + 1) + minRange);
+}
+
+window.onload = function() {
+    const rand = getRandomNumber(0, 100);
+    document.getElementById("danger1").innerHTML = rand;
+    $('#danger1').html(rand);
+};
+		var randomScalingFactor = function() {
+			return Math.round(Math.random() * 100);
+		};
+
+		var config = {
+			type: 'doughnut',
+			data: {
+				datasets: [{
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+					
+					],
+					backgroundColor: [
+						window.chartColors.red,
+						window.chartColors.grey,
+						
+						window.chartColors.green
+						
+					],
+					label: 'Dataset 1'
+				}],
+				labels: [
+					'Most Addicted ',
+					'Moderate ',
+					'Less Addicted',
+					
+				]
+			},
+			options: {
+				responsive: true,
+				legend: {
+					position: 'top',
+				},
+				animation: {
+					animateScale: true,
+					animateRotate: true
+				}
+			}
+		};
+
+		window.onload = function() {
+			var ctx = document.getElementById('chart-area').getContext('2d');
+			window.myDoughnut = new Chart(ctx, config);
+			
+			 var ctx1 = document.getElementById('canvas').getContext('2d');
+			window.myLine = new Chart(ctx1, config1);
+
+		};
+
+		
+		 var config1 = {
+			type: 'line',
+			data: {
+				labels: ['JANUARY', 'FEBRUARY', 'MARCH', 'APRIL','MAY','JUNE','JULY','AUGUST','SEPTEMBER','OCTOBER','NOVEMBER','DECEMBER'],
+				datasets: [{
+					label: 'CREDITS',
+					backgroundColor: window.chartColors.green,
+					borderColor: window.chartColors.green,
+					data: [
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor(),
+						randomScalingFactor()
+						
+					],
+					fill: false,
+				}
+				]
+			},
+			options: {
+				responsive: true,
+				title: {
+					display: true,
+					
+				},
+				tooltips: {
+					mode: 'index',
+					intersect: false,
+				},
+				hover: {
+					mode: 'nearest',
+					intersect: true
+				},
+				scales: {
+					xAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							
+						}
+					}],
+					yAxes: [{
+						display: true,
+						scaleLabel: {
+							display: true,
+							labelString: 'progress in terms of points'
+						}
+					}]
+				}
+			}
+		};
+
+	
+
+		document.getElementById('randomizeData').addEventListener('click', function() {
+			config.data.datasets.forEach(function(dataset) {
+				dataset.data = dataset.data.map(function() {
+					return randomScalingFactor();
+				});
+
+			});
+
+			window.myLine.update();
+		});
+		
+		$(document).ready(function() {
+  $('.progress .progress-bar').progressbar({display_text: 'center'});
+});
+		
+
+
+	</script>
+    <!-- jQuery -->
+    <script src="../vendors/jquery/dist/jquery.min.js"></script>
+    <!-- Bootstrap -->
+    <script src="../vendors/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- FastClick -->
+    <script src="../vendors/fastclick/lib/fastclick.js"></script>
+    <!-- NProgress -->
+    <script src="../vendors/nprogress/nprogress.js"></script>
+    <!-- Chart.js -->
+    <script src="../vendors/Chart.js/dist/Chart.min.js"></script>
+    <!-- gauge.js -->
+    <script src="../vendors/gauge.js/dist/gauge.min.js"></script>
+    <!-- bootstrap-progressbar -->
+    <script src="../vendors/bootstrap-progressbar/bootstrap-progressbar.min.js"></script>
+    <!-- iCheck -->
+    <script src="../vendors/iCheck/icheck.min.js"></script>
+    <!-- Skycons -->
+    <script src="../vendors/skycons/skycons.js"></script>
+    <!-- Flot -->
+    <script src="../vendors/Flot/jquery.flot.js"></script>
+    <script src="../vendors/Flot/jquery.flot.pie.js"></script>
+    <script src="../vendors/Flot/jquery.flot.time.js"></script>
+    <script src="../vendors/Flot/jquery.flot.stack.js"></script>
+    <script src="../vendors/Flot/jquery.flot.resize.js"></script>
+    <!-- Flot plugins -->
+    <script src="../vendors/flot.orderbars/js/jquery.flot.orderBars.js"></script>
+    <script src="../vendors/flot-spline/js/jquery.flot.spline.min.js"></script>
+    <script src="../vendors/flot.curvedlines/curvedLines.js"></script>
+    <!-- DateJS -->
+    <script src="../vendors/DateJS/build/date.js"></script>
+    <!-- JQVMap -->
+    <script src="../vendors/jqvmap/dist/jquery.vmap.js"></script>
+    <script src="../vendors/jqvmap/dist/maps/jquery.vmap.world.js"></script>
+    <script src="../vendors/jqvmap/examples/js/jquery.vmap.sampledata.js"></script>
+    <!-- bootstrap-daterangepicker -->
+    <script src="../vendors/moment/min/moment.min.js"></script>
+    <script src="../vendors/bootstrap-daterangepicker/daterangepicker.js"></script>
+
+    <!-- Custom Theme Scripts -->
+    <script src="../build/js/custom.min.js"></script>
+	
+  </body>
+</html>
