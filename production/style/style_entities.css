@@ -1,0 +1,202 @@
+#wrapper{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+body{
+	font-family : arial,helvetica,sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	margin:0;
+	padding:0;
+	background-color:#f4f4f4;
+}
+
+.container{
+	
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+header{
+    background:#35424a;
+	
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 5px solid;
+}
+
+header a{
+	
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:20px;
+	text-decoration:none;
+}
+
+header ul{
+	position:absolute;
+	margin:0;
+	padding:0;
+	margin-left:5px;
+	list-style:none;
+	left:830px;
+}
+
+header li{
+	
+	float:left;
+	display:inline;
+	padding : 0 20px 0 20px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	position:absolute;
+
+	left:55px;
+	top:8px;
+
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+
+	
+}
+
+header .highlight{
+	color:#e8491d;
+	font-weight:bold;
+}
+
+header ul a:hover{
+	color:#e8491d;
+	font-weight:bold;
+	
+	border:2px solid #e8491d;
+	padding:5px;
+	
+}
+
+#nav div{
+	height:4px;
+	background-color:white;
+	margin:5px 0;
+	border-radius:25px;
+	transition:0.3s;
+	
+}
+  #nav{
+	width:30px;
+	display:block;
+	
+	position:absolute;
+	left:0;
+	margin-top:5px;
+}
+
+.one{
+	width:30px;
+}
+
+.two{
+	width:20px;
+}
+
+.three{
+	width:25px;
+}
+
+#nav:hover div{width:30px;}
+
+
+#entities{
+	border:2px solid #fff;
+	padding:5px;
+}
+
+#entities:hover{
+	color:#e8491d;
+	border-color:#e8491d;
+}
+
+#user,#saathi,#admin{
+	width:100%;
+	height:300px;
+	margin-left:-450px;
+	margin-top:0.7em;
+	
+	
+}
+
+#user_div{
+	background-color:#89cff0;
+	border-bottom:5px solid #e8491d;
+}
+#saathi_div{
+	background-color:#e9d6ff;
+	border-bottom:5px solid #e8491d;
+}
+#admin_div{
+	background-color:#7fffd4;
+		border-bottom:5px solid #e8491d;
+}
+
+#user:hover{
+	height:310px;
+}
+
+#saathi:hover{
+	height:310px;
+}
+
+#admin:hover{
+	height:350px;
+}
+
+#heading1,#heading2,#heading3{
+	position:absolute;
+	left:13.7em;
+	top:5.5em;
+}
+
+#heading2{
+	top:16.2em;
+}
+
+#heading3{
+	top:27.2em;
+}
+
+#description1,#description2,#description3 {
+	width:500px;
+	position :absolute;
+	left:23em;
+	top:12em;
+	 font-size:18px;
+}
+#description2{
+	top:30em;
+} 
+
+#description3{
+	top:48.5em;
+} 
+.LogIn{
+	position:absolute;
+	text-decoration:none;
+	color:#fff;
+	font-size:30px;
+	border:5px solid #fff;
+	padding:15px 35px;
+	margin-top:130px;
+	right:130px;
+	border-radius:50px;
+}

@@ -1,0 +1,153 @@
+#wrapper{
+	position:relative;
+	width:100%;
+	height:100%;
+}
+
+body{
+	font-family : arial,helvetica,sans-serif;
+	font-size:15px;
+	line-height:1.5;
+	margin:0;
+	padding:0;
+	background-color:#f4f4f4;
+}
+
+.container{
+	
+	width:80%;
+	margin:auto;
+	overflow:hidden;
+}
+header{
+    background:#35424a;
+	
+	color:#ffffff;
+	padding-top:30px;
+	min-height:70px;
+	border-bottom:#e8491d 5px solid;
+}
+
+header a{
+	
+	color:#ffffff;
+	text-transform:uppercase;
+	font-size:20px;
+	text-decoration:none;
+}
+
+header ul{
+	position:absolute;
+	margin:0;
+	padding:0;
+	margin-left:5px;
+	list-style:none;
+	left:830px;
+}
+
+header li{
+	
+	float:left;
+	display:inline;
+	padding : 0 20px 0 20px;
+}
+
+header #branding{
+	float:left;
+}
+
+header #branding h1{
+	position:absolute;
+	
+	left:55px;
+	top:8px;
+
+}
+
+header nav{
+	float:right;
+	margin-top:10px;
+
+	
+}
+
+header .highlight{
+	color:#e8491d;
+	font-weight:bold;
+}
+
+header a:hover{
+	color:#e8491d;
+	font-weight:bold;
+	//background-color:#fff;
+	
+}
+
+#nav div{
+	height:4px;
+	background-color:white;
+	margin:5px 0;
+	border-radius:25px;
+	transition:0.3s;
+}
+  #nav{
+	width:30px;
+	display:block;
+	
+	position:absolute;
+	left:0;
+	margin-top:5px;
+}
+
+
+.one{
+	width:30px;
+}
+
+.two{
+	width:20px;
+}
+
+.three{
+	width:25px;
+}
+
+#nav:hover div{width:30px;}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+25% { left: -100%; }
+45% { left: -100%; }
+50% { left: -200%; }
+70% { left: -200%; }
+75% { left: -300%; }
+95% { left: -300%; }
+100% { left: -400%; }
+}
+* {
+  box-sizing: border-box;
+}
+body, figure { 
+  margin: 0; background: #101010;
+  font-family: Istok Web, sans-serif;
+  font-weight: 100;
+}
+div#captioned-gallery { 
+  width: 100%; overflow: hidden; 
+}
+figure.slider { 
+  position: relative; width: 500%;
+  font-size: 0; animation: 30s slidy infinite; 
+}
+figure.slider figure { 
+  width: 20%; height: auto;
+  display: inline-block;  position: inherit; 
+}
+figure.slider img { width: 100%; height: ; }
+figure.slider figure figcaption { 
+  position: absolute; bottom: 0;
+  background: rgba(0,0,0,0.4);
+  color: #fff; width: 100%;
+  font-size: 2rem; padding: .6rem; 
+}
